@@ -1,0 +1,235 @@
+:root {
+  --bg: #0a1220;
+  --bg-soft: #101b2d;
+  --text: #eef2f7;
+  --muted: #c8d2de;
+  --line: rgba(255, 255, 255, 0.14);
+  --accent: #d9e6ff;
+  --max-width: 980px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top right, rgba(130, 154, 188, 0.12), transparent 20%),
+    linear-gradient(180deg, #07101c 0%, #0a1220 100%);
+  line-height: 1.7;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 18%, rgba(255, 255, 255, 0.8) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 70% 25%, rgba(255, 255, 255, 0.75) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 35% 72%, rgba(255, 255, 255, 0.65) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 85% 62%, rgba(255, 255, 255, 0.7) 0 1px, transparent 1.5px);
+  opacity: 0.55;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2 {
+  margin: 0 0 0.75rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header-inner {
+  width: min(calc(100% - 2rem), var(--max-width));
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.site-title {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: var(--text);
+}
+
+.menu-toggle {
+  display: none;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text);
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  font: inherit;
+}
+
+.page-shell {
+  width: min(calc(100% - 2rem), var(--max-width));
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 2rem;
+  align-items: center;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 6vw, 4.8rem);
+}
+
+.hero-role {
+  color: var(--accent);
+  font-size: 1.15rem;
+}
+
+.hero-text p:last-child {
+  margin-bottom: 0;
+}
+
+.hero-image {
+  position: relative;
+  min-height: 280px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background:
+    linear-gradient(180deg, rgba(18, 31, 51, 0.95), rgba(8, 16, 29, 0.95));
+}
+
+.moon {
+  position: absolute;
+  top: 52px;
+  right: 52px;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #ffffff, #d9dfeb 65%, #b8c2cf 100%);
+  box-shadow: 0 0 24px rgba(230, 238, 255, 0.2);
+}
+
+.star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: white;
+}
+
+.star-one {
+  top: 64px;
+  left: 62px;
+}
+
+.star-two {
+  top: 148px;
+  left: 130px;
+}
+
+.star-three {
+  bottom: 72px;
+  right: 118px;
+}
+
+.content-section {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.content-section h2 {
+  font-size: 2.4rem;
+}
+
+.placeholder {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.site-footer {
+  width: min(calc(100% - 2rem), var(--max-width));
+  margin: 0 auto;
+  padding: 1.5rem 0 2.5rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .site-header-inner {
+    position: relative;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    min-width: 12rem;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--bg-soft);
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+    min-height: 220px;
+  }
+}
