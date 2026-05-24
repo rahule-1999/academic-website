@@ -258,6 +258,24 @@ p {
   border: 4px solid rgba(255, 255, 255, 0.14);
 }
 
+.achievement-block {
+  margin-top: 1.5rem;
+}
+
+.achievement-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.achievement-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 4px solid rgba(255, 255, 255, 0.14);
+}
+
 .placeholder {
   color: #ededed;
   font-style: italic;
@@ -312,5 +330,9 @@ p {
   .hero-box,
   .content-box {
     max-width: 100%;
+  }
+
+  .achievement-gallery {
+    grid-template-columns: 1fr;
   }
 }
