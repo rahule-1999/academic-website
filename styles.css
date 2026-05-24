@@ -218,18 +218,63 @@ p {
   width: min(100%, var(--content-width));
 }
 
+.content-copy h1 {
+  margin-bottom: 2rem;
+}
+
 .content-box {
   margin: 1.7rem auto 0;
   max-width: 760px;
-  padding: 1.15rem 1.45rem;
+  padding: 1.4rem 1.65rem;
   background: var(--panel);
   color: #ffffff;
-  text-align: center;
+  text-align: left;
+  font-size: 1.08rem;
 }
 
 .content-box p:last-child,
 .hero-box p:last-child {
   margin-bottom: 0;
+}
+
+.news-stack {
+  display: grid;
+  gap: 2rem;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.news-item-alt {
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+}
+
+.news-media {
+  display: grid;
+  gap: 1rem;
+}
+
+.news-body {
+  margin: 0;
+  max-width: none;
+}
+
+.news-body h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.news-date {
+  margin-bottom: 0.55rem;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #f0dca9;
+  text-transform: uppercase;
 }
 
 .news-list {
@@ -274,6 +319,10 @@ p {
   width: 100%;
   height: auto;
   border: 4px solid rgba(255, 255, 255, 0.14);
+}
+
+.achievement-gallery-single {
+  grid-template-columns: 1fr;
 }
 
 .placeholder {
@@ -330,6 +379,11 @@ p {
   .hero-box,
   .content-box {
     max-width: 100%;
+  }
+
+  .news-item,
+  .news-item-alt {
+    grid-template-columns: 1fr;
   }
 
   .achievement-gallery {
