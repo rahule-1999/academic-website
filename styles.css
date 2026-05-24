@@ -232,6 +232,20 @@ p {
   margin-bottom: 0;
 }
 
+.news-list {
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.news-list li {
+  margin-bottom: 0.8rem;
+}
+
+.news-list li::before {
+  content: "- ";
+}
+
 .placeholder {
   color: #ededed;
   font-style: italic;
