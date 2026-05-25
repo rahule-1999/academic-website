@@ -269,6 +269,10 @@ p {
   align-content: start;
 }
 
+.news-item-featured .news-media {
+  height: 100%;
+}
+
 .news-body {
   display: flex;
   flex-direction: column;
@@ -319,6 +323,15 @@ p {
   object-fit: cover;
   height: auto;
   border: 4px solid rgba(255, 255, 255, 0.14);
+}
+
+.news-item-featured .achievement-figure,
+.news-item-featured .achievement-figure img {
+  height: 100%;
+}
+
+.news-item-featured .achievement-figure img {
+  aspect-ratio: auto;
 }
 
 .achievement-block {
