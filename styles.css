@@ -278,11 +278,13 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   min-width: 0;
+  text-align: justify;
 }
 
 .news-body h2 {
   font-size: 2.4rem;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .news-date {
@@ -298,6 +300,7 @@ p {
   margin: 0 0 1rem;
   padding: 0;
   list-style: none;
+  text-align: justify;
 }
 
 .news-list li {
