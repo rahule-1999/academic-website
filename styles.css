@@ -562,3 +562,7 @@ body {
 .cv-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; }
 .cv-viewer { display: block; width: 100%; height: 80vh; min-height: 500px; border: 1px solid var(--line); border-radius: 6px; background: #111; }
 @media (max-width: 600px) { .cv-viewer { min-height: 400px; height: 65vh; } }
+
+.thesis-preview summary { cursor: pointer; color: var(--accent); padding: .75rem 0; }
+.thesis-preview summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.thesis-preview .cv-viewer { margin-top: 1rem; }
