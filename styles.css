@@ -491,3 +491,20 @@ p {
 
 
 }
+
+.research-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+.research-figure { margin: 0; }
+.research-figure img { display: block; width: 100%; height: auto; border-radius: 6px; }
+.research-figure figcaption { margin-top: .8rem; color: var(--muted); font-size: .85rem; line-height: 1.6; }
+.research-context { color: var(--muted); }
+.research-context h2 { color: var(--text); }
+.research-context p { max-width: 760px; }
+@media (max-width: 900px) {
+  .research-feature { grid-template-columns: 1fr; gap: 2rem; }
+}
