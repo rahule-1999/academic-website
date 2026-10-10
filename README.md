@@ -1,27 +1,18 @@
-# Academic Website Starter
+# Rahul Ethirajulu — academic website
 
-This is a simple one-page academic website starter built with plain HTML, CSS, and JavaScript.
+A responsive academic website built with HTML, CSS, and JavaScript, compatible with GitHub Pages.
 
-## Files
+## Content
 
-- `index.html` contains your content and section structure.
-- `styles.css` contains the visual design and responsive layout.
-- `script.js` adds the mobile menu, section reveal animations, and footer year.
+- `index.html`: introduction, research interests, and latest milestone
+- `about_me/index.html`: academic background
+- `research/index.html`: research overview
+- `publications/index.html`: publication updates
+- `news/index.html`: awards and conference presentations
+- `contact/index.html`: email, professional profiles, and office
 
-## Quick edits
+Shared styles are in `styles.css`; accessible mobile navigation and the footer year are in `script.js`. Photos are in `images/`.
 
-1. Open `index.html`.
-2. Replace `Avery Rowan` with your name.
-3. Update the bio, department, university, publications, courses, and contact details.
-4. Replace the sample links in the contact section with your real Google Scholar, ORCID, CV, or website links.
+## Preview
 
-## Preview locally
-
-Open `index.html` in a browser, or serve the folder with a lightweight local server if you want live reload.
-
-## Good next additions
-
-- Add a headshot or research photo in the hero panel.
-- Link each publication title to a paper, DOI, or PDF.
-- Add a downloadable CV file.
-- Split publications, talks, and teaching into separate pages if your site grows.
+Run `python -m http.server 8000` from this directory and open http://localhost:8000. No build step or dependencies are required.

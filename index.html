@@ -14,9 +14,11 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <script>document.documentElement.classList.add("js");</script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <div class="site-header-inner">
         <a class="site-title" href="./">Rahul Ethirajulu</a>
@@ -41,10 +43,11 @@
       </div>
     </header>
 
-    <main class="page-shell">
+    <main id="main-content" class="page-shell">
       <section class="hero">
         <div class="hero-copy">
-          <h1>Rahul Ethirajulu</h1>
+          <p class="eyebrow">Texas Tech University · Lubbock, Texas</p>
+          <h1>Rahul<br />Ethirajulu</h1>
           <p class="lead">Ph.D. Physics and Astronomy Candidate</p>
           <div class="hero-box">
             <p>
@@ -66,13 +69,36 @@
               experiences.
             </p>
           </div>
+          <div class="hero-actions"><a class="button" href="research/">Explore my research &rarr;</a><a class="button button-secondary" href="contact/">Get in touch</a></div>
         </div>
-        <p class="hero-caption">Physics, astronomy, and computational research.</p>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" fill="none">
+            <defs><radialGradient id="glow"><stop stop-color="#7da999" stop-opacity=".35"/><stop offset="1" stop-color="#173f3f" stop-opacity="0"/></radialGradient></defs>
+            <circle cx="200" cy="240" r="210" fill="url(#glow)"/>
+            <g stroke="#98bfb0" stroke-opacity=".35"><ellipse cx="200" cy="240" rx="165" ry="58" transform="rotate(-35 200 240)"/><ellipse cx="200" cy="240" rx="165" ry="58" transform="rotate(35 200 240)"/><circle cx="200" cy="240" r="110"/><circle cx="200" cy="240" r="145" stroke-dasharray="2 9"/></g>
+            <path d="M0 250 Q40 250 60 240 T100 250 Q115 295 130 240 T150 250 Q165 170 180 250 T205 250 Q220 330 235 250 T260 250 Q280 220 295 250 T340 250 H400" stroke="#d6dcb6" stroke-width="2"/>
+            <g fill="#d6dcb6"><circle cx="290" cy="172" r="5"/><circle cx="85" cy="325" r="3"/><circle cx="110" cy="115" r="2"/><circle cx="320" cy="355" r="2"/></g>
+          </svg>
+          <span class="art-caption">Signals. Data. Discovery.</span>
+        </div>
+      </section>
+      <section class="home-section" aria-labelledby="interests-title">
+        <div class="section-heading"><h2 id="interests-title">Research interests</h2><a href="research/">Research overview &rarr;</a></div>
+        <div class="research-grid">
+          <article><p class="eyebrow">01 / Astrophysics</p><h3>Gravitational waves</h3><p>Signal reconstruction and parameter estimation to explore the information carried by gravitational waves.</p></article>
+          <article><p class="eyebrow">02 / Data analysis</p><h3>Computational astronomy</h3><p>Astrophysical data analysis, simulations, and gamma-ray burst signal-to-noise analysis.</p></article>
+          <article><p class="eyebrow">03 / Scientific computing</p><h3>Machine learning</h3><p>Computational and data-driven methods for understanding complex physical systems.</p></article>
+        </div>
+      </section>
+      <section class="home-section" aria-labelledby="news-title">
+        <div class="section-heading"><h2 id="news-title">Latest milestone</h2><a href="news/">All news &rarr;</a></div>
+        <article class="feature-news"><img src="images/bucy-scholarship.jpeg" alt="Receiving the Bucy Graduate Scholarship at the Texas Tech department banquet." loading="lazy"/><div><p class="news-date">April 2026</p><h3>Bucy Graduate Scholarship</h3><p>Honored at the Physics and Astronomy Department Annual Banquet and 100th anniversary celebration at Texas Tech University.</p><a href="news/">Read more &rarr;</a></div></article>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Copyright <span id="year"></span> Rahul Ethirajulu</p>
+      <p>&copy; <span id="year"></span> Rahul Ethirajulu</p>
+      <p>Physics &amp; Astronomy · Texas Tech University</p>
     </footer>
 
     <script src="script.js"></script>
