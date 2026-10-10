@@ -508,3 +508,13 @@ p {
 @media (max-width: 900px) {
   .research-feature { grid-template-columns: 1fr; gap: 2rem; }
 }
+
+.current-research-summary { max-width: 760px; }
+.current-research-summary p { color: var(--muted); }
+.previous-work-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+.previous-work-grid article { border-top: 2px solid var(--accent); padding-top: 1.2rem; }
+.previous-work-grid p { color: var(--muted); }
+.previous-project { padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
+.previous-project h3 { color: var(--text); }
+.project-source { margin-top: 1.5rem; font-size: .9rem; }
+@media (max-width: 600px) { .previous-work-grid { grid-template-columns: 1fr; gap: 1.5rem; } }
