@@ -566,3 +566,36 @@ body {
 .thesis-preview summary { cursor: pointer; color: var(--accent); padding: .75rem 0; }
 .thesis-preview summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 .thesis-preview .cv-viewer { margin-top: 1rem; }
+
+.photo-slider-frame {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg);
+}
+.photo-slide { display: block; }
+.photo-slide img { display: block; width: 100%; height: auto; }
+.photo-slider:has(.photo-slider-controls:not([hidden])) .photo-slide img {
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+}
+.photo-slider-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.photo-slider-controls button {
+  min-width: 44px;
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--accent);
+  cursor: pointer;
+  font: inherit;
+}
+.photo-slider-controls button:hover { border-color: var(--accent); }
+.photo-slide:focus-visible { outline-offset: -4px; }
+.photo-slide[hidden], .photo-slider-controls[hidden] { display: none; }

@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <script>document.documentElement.classList.add("js");</script>
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles.css?v=photo-slider" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -48,17 +48,22 @@
           <div class="news-stack">
             <section id="aavso-2026" class="news-item" aria-labelledby="aavso-title">
               <div class="news-card">
-                <div class="news-media">
-                  <figure class="achievement-figure">
-                    <img src="../images/aavso-2026-talk.jpeg" width="2730" height="1538" alt="Rahul Ethirajulu speaking beside the title slide for Uncovering Hidden Dwarf Novae in TESS." />
-                  </figure>
-                  <div class="achievement-gallery">
-                    <a href="../images/aavso-2026-slide.jpeg">
+                <div class="news-media photo-slider" role="group" aria-label="AAVSO presentation photos">
+                  <div class="photo-slider-frame" id="aavso-photos">
+                    <a class="photo-slide" href="../images/aavso-2026-talk.jpeg">
+                      <img src="../images/aavso-2026-talk.jpeg" width="2730" height="1538" alt="Rahul Ethirajulu speaking beside the title slide for Uncovering Hidden Dwarf Novae in TESS." />
+                    </a>
+                    <a class="photo-slide" href="../images/aavso-2026-slide.jpeg">
                       <img src="../images/aavso-2026-slide.jpeg" width="3053" height="1717" loading="lazy" alt="Presentation slide showing the white dwarf, accretion disk, hot spot, and donor star in a cataclysmic variable." />
                     </a>
-                    <a href="../images/aavso-2026-podium.jpeg">
+                    <a class="photo-slide" href="../images/aavso-2026-podium.jpeg">
                       <img src="../images/aavso-2026-podium.jpeg" width="2355" height="3000" loading="lazy" alt="Rahul Ethirajulu at the podium during the AAVSO Annual Meeting." />
                     </a>
+                  </div>
+                  <div class="photo-slider-controls" hidden>
+                    <button type="button" data-photo-step="-1" aria-label="Previous photo" aria-controls="aavso-photos">&larr;</button>
+                    <span class="photo-slider-count" role="status"></span>
+                    <button type="button" data-photo-step="1" aria-label="Next photo" aria-controls="aavso-photos">&rarr;</button>
                   </div>
                 </div>
                 <div class="news-body">
@@ -181,6 +186,6 @@
       <p>Physics &amp; Astronomy · Texas Tech University</p>
     </footer>
 
-    <script src="../script.js"></script>
+    <script src="../script.js?v=photo-slider"></script>
   </body>
 </html>

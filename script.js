@@ -23,3 +23,30 @@ if (menuToggle && siteNav) {
   });
   window.matchMedia('(min-width: 901px)').addEventListener('change', closeMenu);
 }
+
+document.querySelectorAll('.photo-slider').forEach(slider => {
+  const slides = [...slider.querySelectorAll('.photo-slide')];
+  const controls = slider.querySelector('.photo-slider-controls');
+  const count = slider.querySelector('.photo-slider-count');
+  if (slides.length < 2) return;
+
+  let index = 0;
+  const showPhoto = step => {
+    index = (index + step + slides.length) % slides.length;
+    slides.forEach((slide, i) => { slide.hidden = i !== index; });
+    count.textContent = `Photo ${index + 1} of ${slides.length}`;
+  };
+
+  controls.querySelectorAll('[data-photo-step]').forEach(button => {
+    button.addEventListener('click', () => showPhoto(Number(button.dataset.photoStep)));
+  });
+  slider.addEventListener('keydown', event => {
+    if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+    event.preventDefault();
+    const photoHadFocus = slides[index] === document.activeElement;
+    showPhoto(event.key === 'ArrowLeft' ? -1 : 1);
+    if (photoHadFocus) slides[index].focus();
+  });
+  showPhoto(0);
+  controls.hidden = false;
+});
