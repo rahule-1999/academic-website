@@ -152,14 +152,20 @@
 
             <section id="seibt-memorial-scholarship" class="news-item">
               <div class="news-card">
-                <div class="news-media">
-                  <figure class="achievement-figure">
-                    <img
-                      class="focus-face-right focus-face-tall"
-                      src="../images/peter-seibt-2.jpeg"
-                      alt="Rahul Ethirajulu receiving the Peter Seibt Memorial Scholarship certificate during the 2025 Physics Banquet."
-                    />
-                  </figure>
+                <div class="news-media photo-slider" role="group" aria-label="Peter Seibt Memorial Scholarship photos">
+                  <div class="photo-slider-frame" id="seibt-photos">
+                    <a class="photo-slide" href="../images/peter-seibt-2.jpeg">
+                      <img src="../images/peter-seibt-2.jpeg" alt="Rahul Ethirajulu receiving the Peter Seibt Memorial Scholarship certificate during the 2025 Physics Banquet." />
+                    </a>
+                    <a class="photo-slide" href="../images/peter-seibt-group.jpg">
+                      <img src="../images/peter-seibt-group.jpg" width="2048" height="1536" alt="Five attendees posing together at the 2025 Texas Tech Physics Banquet." loading="lazy" />
+                    </a>
+                  </div>
+                  <div class="photo-slider-controls" hidden>
+                    <button type="button" data-photo-step="-1" aria-label="Previous photo" aria-controls="seibt-photos">&larr;</button>
+                    <span class="photo-slider-count" role="status"></span>
+                    <button type="button" data-photo-step="1" aria-label="Next photo" aria-controls="seibt-photos">&rarr;</button>
+                  </div>
                 </div>
                 <div class="news-body">
                   <p class="news-date">April 2025</p>
