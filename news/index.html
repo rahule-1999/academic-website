@@ -109,7 +109,7 @@
               </div>
             </section>
 
-            <section class="news-item news-item-alt">
+            <section id="quantum-summit-2025" class="news-item news-item-alt">
               <div class="news-card">
                 <div class="news-body">
                   <p class="news-date">September 2025</p>
@@ -127,22 +127,22 @@
                     a proof of concept.
                   </p>
                 </div>
-                <div class="news-media">
-                  <figure class="achievement-figure">
-                    <img
-                      src="../images/quantum-summit-1.jpeg"
-                      alt="Rahul Ethirajulu and collaborators presenting their poster at the First Texas Quantum Summit 2025."
-                    />
-                  </figure>
-                  <div class="achievement-gallery">
-                    <img
-                      src="../images/quantum-summit-2.jpeg"
-                      alt="Rahul Ethirajulu and collaborators discussing their poster with attendees at the Texas Quantum Summit 2025."
-                    />
-                    <img
-                      src="../images/quantum-summit-3.jpeg"
-                      alt="Rahul Ethirajulu with collaborators and attendees at the Texas Quantum Summit 2025."
-                    />
+                <div class="news-media photo-slider" role="group" aria-label="Quantum Summit presentation photos">
+                  <div class="photo-slider-frame" id="quantum-summit-photos">
+                    <a class="photo-slide" href="../images/quantum-summit-1.jpeg">
+                      <img src="../images/quantum-summit-1.jpeg" alt="Rahul Ethirajulu and collaborators presenting their poster at the First Texas Quantum Summit 2025." />
+                    </a>
+                    <a class="photo-slide" href="../images/quantum-summit-2.jpeg">
+                      <img src="../images/quantum-summit-2.jpeg" alt="Rahul Ethirajulu and collaborators discussing their poster with attendees at the Texas Quantum Summit 2025." loading="lazy" />
+                    </a>
+                    <a class="photo-slide" href="../images/quantum-summit-3.jpeg">
+                      <img src="../images/quantum-summit-3.jpeg" alt="Rahul Ethirajulu with collaborators and attendees at the Texas Quantum Summit 2025." loading="lazy" />
+                    </a>
+                  </div>
+                  <div class="photo-slider-controls" hidden>
+                    <button type="button" data-photo-step="-1" aria-label="Previous photo" aria-controls="quantum-summit-photos">&larr;</button>
+                    <span class="photo-slider-count" role="status"></span>
+                    <button type="button" data-photo-step="1" aria-label="Next photo" aria-controls="quantum-summit-photos">&rarr;</button>
                   </div>
                 </div>
               </div>
