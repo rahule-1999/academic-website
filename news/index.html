@@ -75,16 +75,25 @@
               </div>
             </section>
 
-            <section class="news-item news-item-featured">
+            <section id="bucy-scholarship" class="news-item news-item-featured">
               <div class="news-card">
-                <div class="news-media">
-                  <figure class="achievement-figure">
-                  <img
-                    class="focus-face-left"
-                    src="../images/bucy-scholarship.jpeg"
-                    alt="Rahul Ethirajulu receiving the Bucy Graduate Scholarship at the Texas Tech Physics and Astronomy annual banquet."
-                  />
-                  </figure>
+                <div class="news-media photo-slider" role="group" aria-label="Bucy Graduate Scholarship photos">
+                  <div class="photo-slider-frame" id="bucy-photos">
+                    <a class="photo-slide" href="../images/bucy-scholarship.jpeg">
+                      <img src="../images/bucy-scholarship.jpeg" alt="Rahul Ethirajulu receiving the Bucy Graduate Scholarship at the Texas Tech Physics and Astronomy annual banquet." loading="lazy" />
+                    </a>
+                    <a class="photo-slide" href="../images/bucy-scholarship-presentation.jpg">
+                      <img src="../images/bucy-scholarship-presentation.jpg" alt="Rahul Ethirajulu shaking hands with Dr. Sanati during the Bucy Scholarship presentation." loading="lazy" />
+                    </a>
+                    <a class="photo-slide" href="../images/bucy-scholarship-banquet.jpg">
+                      <img src="../images/bucy-scholarship-banquet.jpg" alt="Attendees gathered around a table at the Texas Tech Physics and Astronomy banquet." loading="lazy" />
+                    </a>
+                  </div>
+                  <div class="photo-slider-controls" hidden>
+                    <button type="button" data-photo-step="-1" aria-label="Previous photo" aria-controls="bucy-photos">&larr;</button>
+                    <span class="photo-slider-count" role="status"></span>
+                    <button type="button" data-photo-step="1" aria-label="Next photo" aria-controls="bucy-photos">&rarr;</button>
+                  </div>
                 </div>
                 <div class="news-body">
                   <p class="news-date">April 2026</p>
