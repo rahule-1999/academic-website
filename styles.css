@@ -610,3 +610,13 @@ body {
     grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   }
 }
+
+#bucy-scholarship .photo-slider:has(.photo-slider-controls:not([hidden])) .photo-slide img {
+  aspect-ratio: 1 / 1;
+}
+
+@media (min-width: 901px) {
+  #bucy-scholarship .news-card {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  }
+}
