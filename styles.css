@@ -648,3 +648,13 @@ body {
 @media (max-width: 600px) {
   .about-gallery { grid-template-columns: 1fr; }
 }
+
+.photography-gallery { margin-top: 2rem; }
+.photography-gallery img {
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: var(--bg);
+}
+@media (min-width: 901px) {
+  .photography-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
