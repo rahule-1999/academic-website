@@ -611,6 +611,11 @@ body {
   }
 }
 
+#bucy-scholarship .photo-slider {
+  width: 80%;
+  justify-self: center;
+}
+
 #bucy-scholarship .photo-slider:has(.photo-slider-controls:not([hidden])) .photo-slide img {
   aspect-ratio: 1 / 1;
 }
