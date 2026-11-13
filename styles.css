@@ -237,17 +237,17 @@ p {
 }
 
 .feature-news {
-  display:grid;
-  grid-template-columns:220px 1fr;
-  gap:2rem;
-  align-items:center
+  display: grid;
+  grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
 }
 
 .feature-news img {
-  width:100%;
-  border-radius:4px;
-  aspect-ratio:16/9;
-  object-fit:cover
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
 
 .feature-news p {
@@ -451,10 +451,6 @@ p {
 
 .research-grid,.feature-news {
   grid-template-columns:1fr
-}
-
-.feature-news img {
-  max-width:320px
 }
 
 .section-heading {
