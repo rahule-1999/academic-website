@@ -617,6 +617,7 @@ body {
 }
 
 @media (min-width: 901px) {
+  #ttu-poster-2026 .news-card,
   #bucy-scholarship .news-card {
     grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
   }
